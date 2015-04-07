@@ -7,6 +7,7 @@ angular.module('dy-ui')
 
         marked.setOptions({
             highlight: function (code) {
+                console.log('higlight in marked');
                 return hljs.highlightAuto(code).value;
             }
         });

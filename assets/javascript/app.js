@@ -16,7 +16,12 @@ angular.module('at15', ['ngRoute', 'dy-ui'])
                 .when('/blog', {
                     templateUrl: 'assets/template/blog/list.html',
                     controller: 'BlogCtrl',
-                    controllerAs: 'book'
+                    controllerAs: 'blogList'
+                })
+                .when('/blog/:blogName',{
+                    templateUrl: 'assets/template/blog/detail.html',
+                    controller: 'BlogDetailCtrl',
+                    controllerAs: 'blogDetail'
                 }).
                 otherwise({
                     redirectTo: '/phones'

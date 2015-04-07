@@ -1,9 +1,14 @@
 <html>
 <head>
     <title>At15-Homepage</title>
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/style/vendor/bootstrap/bootstrap.css"/>
     <link rel="stylesheet" href="assets/style/general.css"/>
+
+    <!-- for markdown code highlight -->
+    <link rel="stylesheet" href="assets/style/vendor/highlightjs/monokai_sublime.css"/>
+
 </head>
 <body ng-app="at15" ng-controller="MainCtrl as main">
 <div id="poster" ng-hide="main.noPoster">
@@ -11,32 +16,49 @@
 </div>
 
 <ng-view></ng-view>
-<!--TODO:put it into the main template -->
-<div class="container" id="switch-con">
-    <div class="row">
-        <div class="col-lg-4">
-            <a href="#/blog"><h1>Blog</h1></a>
-        </div>
-        <div class="col-lg-4">
-            <h1>Project</h1>
-        </div>
-        <div class="col-lg-4">
-            <h1>About</h1>
+
+<!-- Put it in index.html to avoid ajax call -->
+<script type="text/ng-template" id="assets/template/main.html">
+    <div class="container" id="switch-con">
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="#/blog"><h1>Blog</h1></a>
+            </div>
+            <div class="col-lg-4">
+                <h1>Project</h1>
+            </div>
+            <div class="col-lg-4">
+                <h1>About</h1>
+            </div>
         </div>
     </div>
-</div>
+</script>
+
 <!--<button class="btn btn-warning" ng-click="main.togglePoster()">poster?</button>-->
 <div id="footer">
     <div class="copy-right">
         &copy; 1994-2015 at15
     </div>
 </div>
-<!--scripts-->
+
+<!-- scripts -->
 <script src="assets/javascript/vendor/angular/angular.js"></script>
 <script src="assets/javascript/vendor/angular/angular-route.js"></script>
+
+<!-- for markdown render -->
+<script src="assets/javascript/vendor/highlightjs/highlight.pack.js"></script>
+<script src="assets/javascript/vendor/marked/marked.js"></script>
+
+
 <script src="assets/javascript/vendor/dy-ui/app.js"></script>
+<script src="assets/javascript/vendor/dy-ui/services/markdown-render.js"></script>
+<script src="assets/javascript/vendor/dy-ui/directives/markdown-viewer.js"></script>
+
 <script src="assets/javascript/app.js"></script>
 <script src="assets/javascript/controller/main.ctrl.js"></script>
 <script src="assets/javascript/controller/blog.ctrl.js"></script>
+<script src="assets/javascript/controller/blog.detail.ctrl.js"></script>
+<!-- end of scripts -->
+
 </body>
 </html>
