@@ -9,7 +9,12 @@ angular.module('at15')
 
         vm.togglePoster = togglePoster;
 
+        function init() {
+        }
+
         function togglePoster() {
             vm.noPoster = !vm.noPoster;
         }
+
+
     }]);

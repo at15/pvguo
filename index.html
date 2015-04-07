@@ -11,14 +11,17 @@
 
 </head>
 <body ng-app="at15" ng-controller="MainCtrl as main">
-<div id="poster" ng-hide="main.noPoster">
-    <img src="assets/image/at15.jpg" alt="bkg"/>
-</div>
+
 
 <ng-view></ng-view>
 
 <!-- Put it in index.html to avoid ajax call -->
 <script type="text/ng-template" id="assets/template/main.html">
+    
+    <div id="poster" ng-hide="main.noPoster">
+        <img src="assets/image/at15.jpg" alt="bkg"/>
+    </div>
+
     <div class="container" id="switch-con">
         <div class="row">
             <div class="col-lg-4">
