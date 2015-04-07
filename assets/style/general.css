@@ -4,15 +4,29 @@
 }
 
 #switch-con {
-    padding:20px;
+    padding: 20px;
 
     text-align: center;
+}
+
+#switch-con a {
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+#switch-con a:hover {
+    color: #000000;
+}
+
+#blog-list,
+#project-list {
+    min-height: 85%;
 }
 
 #footer {
     position: relative;
 
-    height: 100px;
+    height: 18%;
 
     background-color: #000000;
 }
