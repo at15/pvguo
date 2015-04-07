@@ -2,3 +2,25 @@
     width: 100%;
     height: auto;
 }
+
+#switch-con {
+    padding:20px;
+    
+    text-align: center;
+}
+
+#footer {
+    position: relative;
+
+    height: 100px;
+
+    background-color: #000000;
+}
+
+#footer > .copy-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    color: white;
+}
