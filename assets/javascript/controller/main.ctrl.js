@@ -2,7 +2,7 @@
  * Created by at15 on 15-4-7.
  */
 angular.module('at15')
-    .controller('MainCtrl', function () {
+    .controller('MainCtrl', [function () {
         var vm = this;
 
         vm.noPoster = false;
@@ -12,4 +12,4 @@ angular.module('at15')
         function togglePoster() {
             vm.noPoster = !vm.noPoster;
         }
-    });
+    }]);

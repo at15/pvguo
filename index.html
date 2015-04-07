@@ -9,10 +9,13 @@
 <div id="poster" ng-hide="main.noPoster">
     <img src="assets/image/at15.jpg" alt="bkg"/>
 </div>
+
+<ng-view></ng-view>
+<!--TODO:put it into the main template -->
 <div class="container" id="switch-con">
     <div class="row">
         <div class="col-lg-4">
-            <h1>Blog</h1>
+            <a href="#/blog"><h1>Blog</h1></a>
         </div>
         <div class="col-lg-4">
             <h1>Project</h1>
@@ -30,8 +33,10 @@
 </div>
 <!--scripts-->
 <script src="assets/javascript/vendor/angular/angular.js"></script>
+<script src="assets/javascript/vendor/angular/angular-route.js"></script>
 <script src="assets/javascript/vendor/dy-ui/app.js"></script>
 <script src="assets/javascript/app.js"></script>
 <script src="assets/javascript/controller/main.ctrl.js"></script>
+<script src="assets/javascript/controller/blog.ctrl.js"></script>
 </body>
 </html>
