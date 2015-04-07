@@ -10,18 +10,33 @@ angular.module('at15', ['ngRoute', 'dy-ui'])
         function ($routeProvider, $locationProvider) {
             // TODO:the default route
             $routeProvider
-                .when('/',{
-                    templateUrl:'assets/template/main.html'
+                .when('/', {
+                    templateUrl: 'assets/template/main.html'
                 })
                 .when('/blog', {
                     templateUrl: 'assets/template/blog/list.html',
                     controller: 'BlogCtrl',
                     controllerAs: 'blogList'
                 })
-                .when('/blog/:blogName',{
+                .when('/blog/:blogName', {
                     templateUrl: 'assets/template/blog/detail.html',
                     controller: 'BlogDetailCtrl',
                     controllerAs: 'blogDetail'
+                })
+                .when('/project', {
+                    templateUrl: 'assets/template/project/list.html',
+                    controller: 'ProjectCtrl',
+                    controllerAs: 'projectList'
+                })
+                .when('/project/:projectName', {
+                    templateUrl: 'assets/template/project/detail.html',
+                    controller: 'ProjectDetailCtrl',
+                    controllerAs: 'projectDetail'
+                })
+                .when('/about', {
+                    templateUrl: 'assets/template/about.html',
+                    controller: 'AboutCtrl',
+                    controllerAs: 'about'
                 }).
                 otherwise({
                     redirectTo: '/phones'
