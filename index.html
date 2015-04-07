@@ -5,19 +5,34 @@
     <link rel="stylesheet" href="assets/style/vendor/bootstrap/bootstrap.css"/>
     <link rel="stylesheet" href="assets/style/general.css"/>
 </head>
-<body ng-app="at15">
-<div id="poster">
+<body ng-app="at15" ng-controller="MainCtrl as main">
+<div id="poster" ng-hide="main.noPoster">
     <img src="assets/image/at15.jpg" alt="bkg"/>
 </div>
-<div>
-    <div>i am avatar</div>
-    <div>Blog</div>
-    <div>Project</div>
-    <div>About</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <h1>Blog</h1>
+        </div>
+        <div class="col-lg-4">
+            <h1>Project</h1>
+        </div>
+        <div class="col-lg-4">
+            <h1>About</h1>
+        </div>
+    </div>
+</div>
+<button class="btn btn-warning" ng-click="main.togglePoster()">poster?</button>
+<div id="footer">
+    <div class="col-lg-8"></div>
+    <div class="col-lg-4">
+        1994-2015 at15
+    </div>
 </div>
 <!--scripts-->
 <script src="assets/javascript/vendor/angular/angular.js"></script>
 <script src="assets/javascript/vendor/dy-ui/app.js"></script>
 <script src="assets/javascript/app.js"></script>
+<script src="assets/javascript/controller/main.ctrl.js"></script>
 </body>
 </html>
