@@ -19,6 +19,7 @@
 }
 
 #blog-list,
+#blog-detail,
 #project-list {
     min-height: 85%;
 }

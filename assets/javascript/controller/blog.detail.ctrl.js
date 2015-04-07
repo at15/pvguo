@@ -4,5 +4,7 @@
 angular.module('at15')
     .controller('BlogDetailCtrl', ['$routeParams', function ($routeParams) {
         var vm = this;
-        vm.name = 'blog' + '/' + $routeParams.blogName;
+
+        vm.name = $routeParams.blogName.slice(0, -3);
+        vm.fileName = 'blog' + '/' + $routeParams.blogName;
     }]);

@@ -1,4 +1,4 @@
-# Stared sites
+## Stared sites
 
 A collection of sites i stared.
 

@@ -1,5 +1,11 @@
 <!-- detail for blog -->
-<div>
-    <h1>a blog detail</h1>
-    <markdown-viewer src="{{blogDetail.name}}"></markdown-viewer>
+<div class="container" id="blog-detail">
+    <div class="row">
+        <h1>{{blogDetail.name}}</h1>
+    </div>
+    <div class="row">
+        <div class="blog-md-con">
+            <markdown-viewer src="{{blogDetail.fileName}}"></markdown-viewer>
+        </div>
+    </div>
 </div>
