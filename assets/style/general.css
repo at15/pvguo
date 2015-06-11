@@ -20,7 +20,8 @@
 
 #blog-list,
 #blog-detail,
-#project-list {
+#project-list,
+#about-page{
     min-height: 85%;
 }
 
