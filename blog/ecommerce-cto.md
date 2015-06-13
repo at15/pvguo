@@ -11,7 +11,7 @@ TODO: re order by importance or time sequence
 - he always fail in university, so he is not afraid of it.
 - it's a pity to live for money.
 - success depends on luck, many people just bullshit about how they success.
-- you need to try, other wise you will never know.
+- you need to try, other wise you will never know. DON'T spend all your time on thinking.
 - you need to have passion for what you are doing, ownership ( I forgot where he mentioned this though). smart is not enough, the most successful are not the smartest.
 - Internet is a bubble, it's unfair for programmers to earn as much as old professional in other area, and every field need hard work like programming. ( programmers should
 not feel so good about themselves)
