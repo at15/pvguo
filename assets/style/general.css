@@ -21,7 +21,7 @@
 #blog-list,
 #blog-detail,
 #project-list,
-#about-page{
+#about-page {
     min-height: 85%;
 }
 
@@ -39,4 +39,9 @@
     right: 20px;
 
     color: white;
+}
+
+.about-avatar {
+    width: 100px;
+    height: 100px;
 }
