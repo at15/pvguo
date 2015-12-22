@@ -33,15 +33,41 @@
     background-color: #000000;
 }
 
-#footer > .copy-right {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-
-    color: white;
-}
-
 .about-avatar {
     width: 100px;
     height: 100px;
 }
+
+#footer > .friends {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+}
+
+#footer > .friends ul,
+#footer > .friends li{
+    list-style: none;
+}
+
+#footer > .friends li {
+    padding: 5px;
+    float: left;
+}
+
+#footer > .friends a {
+    color: lightgray;
+}
+
+#footer > .friends a:hover{
+    color: white;
+}
+
+#footer > .copy-right {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    color: lightgray;
+}
+
