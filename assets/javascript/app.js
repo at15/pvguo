@@ -37,9 +37,14 @@ angular.module('at15', ['ngRoute', 'dy-ui'])
                     templateUrl: 'assets/template/about.html',
                     controller: 'AboutCtrl',
                     controllerAs: 'about'
+                })
+                .when('/friend', {
+                    templateUrl: 'assets/template/friend.html',
+                    controller: 'FriendCtrl',
+                    controllerAs: 'friend'
                 }).
                 otherwise({
-                    redirectTo: '/phones'
+                    redirectTo: '/404'
                 });
 
             //$locationProvider.html5Mode(true);
