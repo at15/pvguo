@@ -1,11 +1,9 @@
 # Jason Han
 
-Got a chance to meet him during a lecture in sjtu, red sofa in media and design (???...)
-Just notes about he has talk about and some reflection
+Got a chance to meet him during a lecture in sjtu.
+Just notes about he has talk about and what I have in mind.s
 
 ## Notes
-
-TODO: re order by importance or time sequence
 
 - study in university is useless, especially in China.
 - he always fail in university, so he is not afraid of it.
@@ -20,7 +18,7 @@ not feel so good about themselves)
 - 90's don't need to worry about future like they did, ie: his son.
 - The key point for e-commerce is too keep data consistent. (? how to say 强一致性)
 
-## Reflection
+## Some thoughts
 
 - university is not so useless, though many courses are out dated and won't use in a whole life, but it's will benefits
 in some indirect ways, ie: thinking pattern. And it is a buffer for students, not all students can get used to society 
